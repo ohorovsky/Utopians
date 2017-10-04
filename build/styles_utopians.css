@@ -8,7 +8,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/img-utopians/home-header.jpg);
+  background-image: url(sections/img-utopians/home-header.jpg);
   background-position: center;
   background-size: cover;
   z-index: 0;
@@ -252,10 +252,10 @@ nav.nav-expand .sign-btn {
   background-size: cover;
 }
 .under-header .card .card-img-top.tim {
-  background-image: url('/img-utopians/tim-hwang.png');
+  background-image: url('sections/img-utopians/tim-hwang.png');
 }
 .under-header .card .card-img-top.anna {
-  background-image: url('/img-utopians/anna-stork.png');
+  background-image: url('sections/img-utopians/anna-stork.png');
 }
 .trending {
   padding: 100px 0 75px 0;
@@ -284,13 +284,13 @@ nav.nav-expand .sign-btn {
   min-height: 250px;
 }
 .trending .trending-card .trending-card-img.brian {
-  background-image: url('/img-utopians/brian.png');
+  background-image: url('sections/img-utopians/brian.png');
 }
 .trending .trending-card .trending-card-img.tatiana {
-  background-image: url('/img-utopians/tatiana.png');
+  background-image: url('sections/img-utopians/tatiana.png');
 }
 .trending .trending-card .trending-card-img.carly {
-  background-image: url('/img-utopians/carly.png');
+  background-image: url('sections/img-utopians/carly.png');
 }
 .trending .trending-card .trending-card-text {
   display: flex;
@@ -467,7 +467,7 @@ nav.nav-expand .sign-btn {
   display: inline-block;
 }
 .split .split-right .wrapper .articles .article .article-img.article-1 {
-  background-image: url('/img-utopians/articles/article-1.png');
+  background-image: url('sections/img-utopians/articles/article-1.png');
 }
 .split .split-right .wrapper .articles .article .article-text {
   display: flex;
@@ -504,7 +504,7 @@ nav.nav-expand .sign-btn {
   padding-right: 0;
 }
 .videos .card .video-card-img {
-  background-image: url("/img-utopians/videos.png");
+  background-image: url("sections/img-utopians/videos.png");
   background-position: center;
   background-size: cover;
   min-height: 300px;
@@ -529,7 +529,7 @@ nav.nav-expand .sign-btn {
   display: inline-block;
 }
 .videos .wrapper .articles .article .article-img.article-1 {
-  background-image: url('/img-utopians/articles/article-1.png');
+  background-image: url('sections/img-utopians/articles/article-1.png');
 }
 .videos .wrapper .articles .article .article-text {
   display: flex;
@@ -681,7 +681,7 @@ nav.nav-expand .sign-btn {
   width: 150px;
   height: 100px;
   display: inline-block;
-  background-image: url('/img-utopians/articles/article-1.png');
+  background-image: url('sections/img-utopians/articles/article-1.png');
 }
 .search .search-results .results-container .result .result-text {
   display: flex;
