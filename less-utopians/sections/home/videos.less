@@ -1,0 +1,68 @@
+.videos{
+    padding: 100px 0;
+    background-color: @color-secondary;
+    .text-wrapper{
+        text-align: center;
+        padding-bottom: 50px;
+        h2{
+            font-weight: 300;
+            font-size: @font-size-l;
+        }
+        h3{
+            font-weight: 300;
+            font-size: @font-size-m;
+        }
+    }
+    .card{
+        background-color: rgba(0,0,0,0);
+        border: none;
+        height: 100%;
+        .card-body{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .video-card-img{
+            background-image: url("/img-utopians/videos.png");
+            background-position: center;
+            background-size: cover;
+            min-height: 300px;
+        }
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        //justify-content: center;
+        height: 100%;
+        .articles{
+            padding-bottom: 25px;
+            .article{
+                display: flex;
+                margin-bottom: 10px;
+                .article-img{
+                    background-position: center;
+                    background-size: cover;
+                    width: 100px;
+                    height: 100px;
+                    display: inline-block;
+                    &.article-1{
+                        background-image: url('/img-utopians/articles/article-1.png');
+                    }
+                }
+                .article-text{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    p{
+                        margin: 0;
+                        padding: 10px;
+                    }
+                    
+                }
+            }
+        }
+        .split-btn{
+            .btn();
+        }
+        
+    }
+}

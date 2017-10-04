@@ -1,0 +1,45 @@
+.discover{
+    padding: 100px 0;
+    .text-wrapper{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .card-group{
+        .card{
+            margin: 10px;
+            border: 1px solid @color-link;
+            border-radius: 0px;
+            &:hover{
+                background-color: @color-main;
+                .card-body{
+                    color: #fff;
+                }
+                .discover-btn{
+                    color: #fff;
+                }
+            }
+            .card-body{
+                display: flex;
+                flex-direction: column;
+                .card-title{
+                    flex: 1;
+                    font-weight: 300;
+                }
+                .discover-btn{
+                    
+                }
+            }
+        }
+    }
+    .dots{
+        text-align: center;
+        padding-top: 50px;
+        .dot{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: @color-secondary;
+        }
+    }
+}

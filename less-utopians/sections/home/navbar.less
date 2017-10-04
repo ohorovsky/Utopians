@@ -1,0 +1,140 @@
+nav{
+    position: fixed !important;
+    width: 100%;
+    z-index: 100;
+    display: block !important;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(255,255,255,0.2);
+    height: 60px;
+    overflow: hidden;
+    transition: 0.25s;
+    .i-am-flex{
+        padding: 0;
+    }
+    &.nav-invert, &.nav-invert-load{
+        background-color: #fff;
+        .nav-mobile-btn{
+            .btn-line{
+                background-color: @color-main;
+            }
+        }
+        a{
+            color:@color-main !important;
+            
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        .sign-btn{
+            .btn();
+            color: #fff !important;
+        }
+    }
+    a{
+        color: #fff !important;
+    }
+    .navbar-brand{
+        margin-right: 0;
+        width: 20%;
+    }
+    .navbar-nav{
+        flex-direction: row;
+        width: 20%;
+        &.middle{
+            justify-content: center;
+            width: 60%;
+        }
+        .nav-item{
+            &.active{
+                a{
+                    color: @color-link !important;
+                }
+            }
+        }
+        @media @mobile-sm{
+               
+               
+        }
+        li{
+            margin: 0 10px;
+        }
+        &.pull-right{
+            justify-content: flex-end;
+            .sign-btn{
+                .btn();
+                @media @desktop{
+                    padding: 10px 24px;
+                }
+            }
+            .search-hide-btn{
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: rgba(0,0,0,0);
+                font-size: 27px;
+                border: none;
+                padding: 0;
+            }
+        }
+        
+        
+    }
+    .nav-mobile-btn{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        justify-content: center;
+        height: 39px;
+        .btn-line{
+            width: 30px;
+            height: 3px;
+            border-radius: 5px;
+            background-color: #fff;
+            margin: 4px;
+        }
+    }
+    @media @desktop{
+        font-size: @font-size-xs;
+    }
+    @media @tablet{
+        .nav-mobile-btn{
+            display: flex;
+        }
+        .i-am-flex{
+            flex-direction: column;
+            align-items: inherit;
+        }
+        .navbar-nav{
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+    }
+    &.nav-expand{
+        height: 290px;
+        background-color: #fff;
+        .navbar-nav{
+            width: 100%;
+        }
+        .nav-mobile-btn{
+            .btn-line{
+                background-color: @color-main;
+            }
+        }
+        a{
+            color: @color-main !important;
+        }
+        .sign-btn{
+            color: #fff !important;
+            text-align: center;
+        }
+        
+    }
+}
+
+
+.hide-menu-btn{
+    transform: translateY(-120%);
+}

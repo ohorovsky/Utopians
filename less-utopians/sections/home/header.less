@@ -1,0 +1,80 @@
+.home-header{
+    position: relative;
+    min-height: 100vh;
+    .background-image{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(/img-utopians/home-header.jpg);
+        background-position: center;
+        background-size: cover;
+        z-index: 0;
+    }
+    .header-content{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        padding: 0 15px;
+        .text-wrapper{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #fff;
+            z-index: 1;
+            max-width: 50%;
+            @media @tablet{
+                max-width: 75%;
+            }
+            @media @mobile{
+                h2,p,button{
+                    font-size: @font-size-m !important;
+                }
+                .same-size{
+                    font-size: @font-size-l !important;
+                }
+                .company{
+                    font-size: @font-size-s !important;
+                }
+            }
+            @media @mobile-sm{
+                h2,p,button{
+                    font-size: @font-size-xs !important;
+                }
+                .same-size{
+                    font-size: @font-size-l !important;
+                }
+                .company{
+                    font-size: @font-size-xs !important;
+                }
+            }
+            h2,p{
+                color: #fff;
+            }
+            .same-size{
+                font-size: @font-size-xl;
+                font-weight: 300;
+                .company{
+                    font-size: @font-size-l;
+                    color: #fff;
+                }
+            }
+            h2{
+                font-size: @font-size-m;
+                padding: 25px 0;
+                font-weight: 300;
+            }
+            p{
+                font-size: @font-size-s;
+                font-weight: 300;
+            }
+            .home-header-btn{
+                .btn();
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,1063 @@
+.home-header {
+  position: relative;
+  min-height: 100vh;
+}
+.home-header .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img-utopians/home-header.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+.home-header .header-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 0 15px;
+}
+.home-header .header-content .text-wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  z-index: 1;
+  max-width: 50%;
+}
+@media only screen and (max-width: 767px) {
+  .home-header .header-content .text-wrapper {
+    max-width: 75%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .home-header .header-content .text-wrapper h2,
+  .home-header .header-content .text-wrapper p,
+  .home-header .header-content .text-wrapper button {
+    font-size: 21px !important;
+  }
+  .home-header .header-content .text-wrapper .same-size {
+    font-size: 34px !important;
+  }
+  .home-header .header-content .text-wrapper .company {
+    font-size: 16px !important;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .home-header .header-content .text-wrapper h2,
+  .home-header .header-content .text-wrapper p,
+  .home-header .header-content .text-wrapper button {
+    font-size: 14px !important;
+  }
+  .home-header .header-content .text-wrapper .same-size {
+    font-size: 34px !important;
+  }
+  .home-header .header-content .text-wrapper .company {
+    font-size: 14px !important;
+  }
+}
+.home-header .header-content .text-wrapper h2,
+.home-header .header-content .text-wrapper p {
+  color: #fff;
+}
+.home-header .header-content .text-wrapper .same-size {
+  font-size: 46px;
+  font-weight: 300;
+}
+.home-header .header-content .text-wrapper .same-size .company {
+  font-size: 34px;
+  color: #fff;
+}
+.home-header .header-content .text-wrapper h2 {
+  font-size: 21px;
+  padding: 25px 0;
+  font-weight: 300;
+}
+.home-header .header-content .text-wrapper p {
+  font-size: 16px;
+  font-weight: 300;
+}
+.home-header .header-content .text-wrapper .home-header-btn {
+  color: #fff;
+  background-color: #333333;
+  padding: 10px 30px;
+  border: 1px solid #333333;
+  transition: 0.25s;
+}
+.home-header .header-content .text-wrapper .home-header-btn:hover {
+  background-color: #fff;
+  color: #333333 !important;
+}
+nav {
+  position: fixed !important;
+  width: 100%;
+  display: block !important;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 60px;
+  overflow: hidden;
+  transition: 0.25s;
+}
+nav .i-am-flex {
+  padding: 0;
+}
+nav.nav-invert,
+nav.nav-invert-load {
+  background-color: #fff;
+}
+nav.nav-invert .nav-mobile-btn .btn-line,
+nav.nav-invert-load .nav-mobile-btn .btn-line {
+  background-color: #333333;
+}
+nav.nav-invert a,
+nav.nav-invert-load a {
+  color: #333333 !important;
+}
+nav.nav-invert a:hover,
+nav.nav-invert-load a:hover {
+  text-decoration: underline;
+}
+nav.nav-invert .sign-btn,
+nav.nav-invert-load .sign-btn {
+  color: #fff;
+  background-color: #333333;
+  padding: 10px 30px;
+  border: 1px solid #333333;
+  transition: 0.25s;
+  color: #fff !important;
+}
+nav.nav-invert .sign-btn:hover,
+nav.nav-invert-load .sign-btn:hover {
+  background-color: #fff;
+  color: #333333 !important;
+}
+nav a {
+  color: #fff !important;
+}
+nav .navbar-brand {
+  margin-right: 0;
+  width: 20%;
+}
+nav .navbar-nav {
+  flex-direction: row;
+  width: 20%;
+}
+nav .navbar-nav.middle {
+  justify-content: center;
+  width: 60%;
+}
+nav .navbar-nav .nav-item.active a {
+  color: #62676d !important;
+}
+nav .navbar-nav li {
+  margin: 0 10px;
+}
+nav .navbar-nav.pull-right {
+  justify-content: flex-end;
+}
+nav .navbar-nav.pull-right .sign-btn {
+  color: #fff;
+  background-color: #333333;
+  padding: 10px 30px;
+  border: 1px solid #333333;
+  transition: 0.25s;
+}
+nav .navbar-nav.pull-right .sign-btn:hover {
+  background-color: #fff;
+  color: #333333 !important;
+}
+@media only screen and (max-width: 991px) {
+  nav .navbar-nav.pull-right .sign-btn {
+    padding: 10px 24px;
+  }
+}
+nav .navbar-nav.pull-right .search-hide-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 27px;
+  border: none;
+  padding: 0;
+}
+nav .nav-mobile-btn {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: center;
+  height: 39px;
+}
+nav .nav-mobile-btn .btn-line {
+  width: 30px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 4px;
+}
+@media only screen and (max-width: 991px) {
+  nav {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  nav .nav-mobile-btn {
+    display: flex;
+  }
+  nav .i-am-flex {
+    flex-direction: column;
+    align-items: inherit;
+  }
+  nav .navbar-nav {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+}
+nav.nav-expand {
+  height: 290px;
+  background-color: #fff;
+}
+nav.nav-expand .navbar-nav {
+  width: 100%;
+}
+nav.nav-expand .nav-mobile-btn .btn-line {
+  background-color: #333333;
+}
+nav.nav-expand a {
+  color: #333333 !important;
+}
+nav.nav-expand .sign-btn {
+  color: #fff !important;
+  text-align: center;
+}
+.hide-menu-btn {
+  transform: translateY(-120%);
+}
+.under-header {
+  padding: 100px 0;
+}
+.under-header .card {
+  border: none;
+  margin: 15px;
+}
+.under-header .card .card-img-top {
+  min-height: 365px;
+  background-position: center;
+  background-size: cover;
+}
+.under-header .card .card-img-top.tim {
+  background-image: url('/img-utopians/tim-hwang.png');
+}
+.under-header .card .card-img-top.anna {
+  background-image: url('/img-utopians/anna-stork.png');
+}
+.trending {
+  padding: 100px 0 75px 0;
+  background-color: #F7F7F7;
+}
+.trending h2 {
+  font-size: 34px;
+  text-align: center;
+  font-weight: 300;
+}
+.trending h3 {
+  font-size: 21px;
+  text-align: center;
+  font-weight: 300;
+  padding: 25px 0;
+}
+.trending .trending-card {
+  margin: 25px -15px;
+}
+.trending .trending-card .col-md-6 {
+  padding: 0;
+}
+.trending .trending-card .trending-card-img {
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+}
+.trending .trending-card .trending-card-img.brian {
+  background-image: url('/img-utopians/brian.png');
+}
+.trending .trending-card .trending-card-img.tatiana {
+  background-image: url('/img-utopians/tatiana.png');
+}
+.trending .trending-card .trending-card-img.carly {
+  background-image: url('/img-utopians/carly.png');
+}
+.trending .trending-card .trending-card-text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  padding: 25px;
+  background-color: #fff;
+}
+.trending .trending-card .trending-card-text .heading {
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+  font-size: 21px;
+}
+.trending .trending-card .trending-card-text .subheading {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+.trending .trending-card .trending-card-text .body {
+  padding: 15px 0;
+  margin: 0;
+  font-size: 16px;
+}
+.trending .trending-card .trending-card-text .footer {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+.trending .load-more-btn {
+  color: #fff;
+  background-color: #333333;
+  padding: 10px 30px;
+  border: 1px solid #333333;
+  transition: 0.25s;
+  margin: 50px auto 0 auto;
+  display: block;
+}
+.trending .load-more-btn:hover {
+  background-color: #fff;
+  color: #333333 !important;
+}
+@media only screen and (max-width: 767px) {
+  .trending .buttons-wrapper .wrapper-element .buttons-wrapper__button {
+    padding: 4px 12px;
+  }
+}
+.discover {
+  padding: 100px 0;
+}
+.discover .text-wrapper {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.discover .card-group .card {
+  margin: 10px;
+  border: 1px solid #62676d;
+  border-radius: 0px;
+}
+.discover .card-group .card:hover {
+  background-color: #333333;
+}
+.discover .card-group .card:hover .card-body {
+  color: #fff;
+}
+.discover .card-group .card:hover .discover-btn {
+  color: #fff;
+}
+.discover .card-group .card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+.discover .card-group .card .card-body .card-title {
+  flex: 1;
+  font-weight: 300;
+}
+.discover .dots {
+  text-align: center;
+  padding-top: 50px;
+}
+.discover .dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #F7F7F7;
+}
+.speaker {
+  padding: 100px 0;
+  background-color: #F7F7F7;
+}
+.speaker .text-wrapper {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.speaker .icon-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.speaker .icon-wrapper .icon-wrapper-item {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-height: 100px;
+  margin: 25px;
+}
+.split {
+  padding: 100px 0;
+}
+.split .split-btn {
+  color: #fff;
+  background-color: #333333;
+  padding: 10px 30px;
+  border: 1px solid #333333;
+  transition: 0.25s;
+}
+.split .split-btn:hover {
+  background-color: #fff;
+  color: #333333 !important;
+}
+.split .split-left .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .split .split-left .wrapper {
+    align-items: center;
+  }
+}
+.split .split-left .wrapper h2 {
+  flex: 1;
+}
+.split .split-left .wrapper .profiles {
+  padding: 25px 0;
+}
+.split .split-left .wrapper .profiles .contributor-profile .image {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+.split .split-left .wrapper .profiles .contributor-profile .name h3 {
+  font-size: 16px;
+  text-align: center;
+  padding: 21.5px 0;
+}
+.split .split-right .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media only screen and (max-width: 767px) {
+  .split .split-right .wrapper {
+    align-items: center;
+    margin-top: 50px;
+  }
+}
+.split .split-right .wrapper .articles {
+  padding: 25px 0;
+}
+.split .split-right .wrapper .articles .article {
+  display: flex;
+  margin: 10px 0;
+}
+.split .split-right .wrapper .articles .article .article-img {
+  background-position: center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+.split .split-right .wrapper .articles .article .article-img.article-1 {
+  background-image: url('/img-utopians/articles/article-1.png');
+}
+.split .split-right .wrapper .articles .article .article-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.split .split-right .wrapper .articles .article .article-text p {
+  margin: 0;
+  padding: 10px;
+}
+.videos {
+  padding: 100px 0;
+  background-color: #F7F7F7;
+}
+.videos .text-wrapper {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.videos .text-wrapper h2 {
+  font-weight: 300;
+  font-size: 34px;
+}
+.videos .text-wrapper h3 {
+  font-weight: 300;
+  font-size: 21px;
+}
+.videos .card {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  height: 100%;
+}
+.videos .card .card-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+.videos .card .video-card-img {
+  background-image: url("/img-utopians/videos.png");
+  background-position: center;
+  background-size: cover;
+  min-height: 300px;
+}
+.videos .wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.videos .wrapper .articles {
+  padding-bottom: 25px;
+}
+.videos .wrapper .articles .article {
+  display: flex;
+  margin-bottom: 10px;
+}
+.videos .wrapper .articles .article .article-img {
+  background-position: center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+.videos .wrapper .articles .article .article-img.article-1 {
+  background-image: url('/img-utopians/articles/article-1.png');
+}
+.videos .wrapper .articles .article .article-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.videos .wrapper .articles .article .article-text p {
+  margin: 0;
+  padding: 10px;
+}
+.videos .wrapper .split-btn {
+  color: #fff;
+  background-color: #333333;
+  padding: 10px 30px;
+  border: 1px solid #333333;
+  transition: 0.25s;
+}
+.videos .wrapper .split-btn:hover {
+  background-color: #fff;
+  color: #333333 !important;
+}
+.move {
+  padding: 100px 0;
+}
+.move .text-wrapper {
+  text-align: center;
+}
+.move .text-wrapper .join-us-btn {
+  color: #fff;
+  background-color: #333333;
+  padding: 10px 30px;
+  border: 1px solid #333333;
+  transition: 0.25s;
+  margin-top: 25px;
+}
+.move .text-wrapper .join-us-btn:hover {
+  background-color: #fff;
+  color: #333333 !important;
+}
+.footer .footer-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer-right {
+    justify-content: center;
+  }
+}
+.footer .footer-right .right-item img {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer-left {
+    text-align: center;
+  }
+}
+.footer .footer-left .left-item {
+  display: inline-block;
+  margin: 5px;
+  letter-spacing: 3px;
+  font-size: 10px;
+}
+.footer .footer-left .left-item a:hover {
+  color: black;
+  text-decoration: none;
+}
+.search {
+  position: relative;
+  padding: 50px 0;
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: #fff;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: 0.25s;
+}
+.search.show {
+  position: fixed;
+  transform: translateY(0%);
+  opacity: 1;
+  height: 100%;
+  overflow-y: scroll;
+}
+.search .fa-times {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 34px;
+}
+.search .search-note {
+  padding: 0;
+  margin: 0;
+}
+.search .input-wrapper {
+  position: relative;
+  margin: 25px 0;
+}
+.search .input-wrapper .search-input {
+  text-indent: 75px;
+  border: none;
+  font-size: 46px;
+}
+.search .input-wrapper .search-input:focus {
+  outline: none;
+}
+.search .input-wrapper .search-input::placeholder {
+  color: #E6E6E6;
+}
+.search .input-wrapper i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 46px;
+  color: #E6E6E6;
+}
+.search .search-results {
+  transition: 0.25s;
+}
+.search .search-results .results-container {
+  background-color: #F7F7F7;
+  transition: 0.25s;
+}
+.search .search-results .results-container .result {
+  display: flex;
+  margin: 10px 0;
+  opacity: 0;
+  transition: 0.25s;
+}
+.search .search-results .results-container .result.show {
+  opacity: 1;
+}
+.search .search-results .results-container .result:hover {
+  background-color: #333333;
+}
+.search .search-results .results-container .result:hover p {
+  color: #fff;
+}
+.search .search-results .results-container .result .result-img {
+  background-position: center;
+  background-size: cover;
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-image: url('/img-utopians/articles/article-1.png');
+}
+.search .search-results .results-container .result .result-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.search .search-results .results-container .result .result-text p {
+  margin: 0;
+  padding: 10px;
+}
+.search .search-results .results-container .more-results-btn {
+  color: #fff;
+  background-color: #333333;
+  padding: 10px 30px;
+  border: 1px solid #333333;
+  transition: 0.25s;
+}
+.search .search-results .results-container .more-results-btn:hover {
+  background-color: #fff;
+  color: #333333 !important;
+}
+.trending-header {
+  padding: 100px 0 75px 0;
+  background-color: #fff;
+}
+.trending-header .trending-header-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.trending-header .trending-header-wrapper .wrapper-element {
+  flex: 1;
+  padding: 5px;
+  text-align: center;
+}
+.trending-header .trending-header-wrapper .wrapper-element .star {
+  display: inline-block;
+  padding: 10px;
+}
+.trending-header .trending-header-wrapper .wrapper-element .caret-down {
+  display: inline-block;
+  padding: 10px 0;
+}
+.trending-header .trending-card {
+  margin: 25px 0;
+}
+.trending-header .trending-card .col-md-6 {
+  padding: 0;
+}
+.trending-header .trending-card .trending-card-img {
+  background-size: cover;
+  background-position: center;
+  min-height: 336px;
+}
+.trending-header .trending-card .trending-card-img.tatiana {
+  background-image: url('/img-utopians/tatiana.png');
+}
+.trending-header .trending-card .trending-card-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  padding: 0 25px;
+  background-color: #fff;
+}
+@media only screen and (max-width: 767px) {
+  .trending-header .trending-card .trending-card-text {
+    margin-top: 50px;
+  }
+}
+.trending-header .trending-card .trending-card-text .heading {
+  flex: 1;
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+  font-size: 34px;
+}
+.trending-header .trending-card .trending-card-text .subheading {
+  flex: 1;
+  padding: 20px;
+  margin: 0;
+  font-size: 21px;
+}
+.trending-header .trending-card .trending-card-text .body {
+  flex: 1;
+  padding: 15px 0;
+  margin: 0;
+  font-size: 16px;
+}
+.trending-header .trending-card .trending-card-text .footer {
+  flex: 1;
+  padding: 0;
+  margin: 0;
+}
+.trending-header .trending-card .trending-card-text .footer .footer-icons .icon img {
+  height: 30px;
+  width: 30px;
+}
+.trending-header .book-btn {
+  color: #fff;
+  background-color: #333333;
+  padding: 10px 30px;
+  border: 1px solid #333333;
+  transition: 0.25s;
+  margin: 50px auto 0 auto;
+  display: block;
+}
+.trending-header .book-btn:hover {
+  background-color: #fff;
+  color: #333333 !important;
+}
+.trending-under-header {
+  padding: 100px 0;
+  background-color: #F7F7F7;
+}
+.trending-under-header .buttons-wrapper {
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.trending-under-header .buttons-wrapper .wrapper-element {
+  flex: inherit;
+}
+.trending-under-header h2 {
+  margin: 50px 0;
+}
+@media only screen and (max-width: 575px) {
+  .trending-under-header h2 {
+    text-align: center;
+  }
+}
+.trending-under-header .card-group {
+  margin-bottom: 20px;
+}
+.trending-under-header .card-group .card {
+  border: none;
+  margin: 10px;
+}
+.trending-under-header .card-group .card .card-img-top {
+  min-height: 300px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  .trending-under-header .card-group .card .card-img-top {
+    min-height: 200px;
+  }
+}
+.trending-under-header .card-group .card .card-img-top .video-overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.trending-under-header .card-group .card .card-img-top .video-overlay i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 46px;
+  color: #fff;
+}
+.trending-under-header .card-group .card .card-img-top.card-1 {
+  background-image: url('/img-utopians/trending/card-1.png');
+}
+.trending-under-header .card-group .card .card-img-top.card-2 {
+  background-image: url('/img-utopians/trending/card-2.png');
+}
+.trending-under-header .card-group .card .card-img-top.card-3 {
+  background-image: url('/img-utopians/trending/card-3.png');
+}
+.trending-under-header .card-group .card .card-img-top.card-4 {
+  background-image: url('/img-utopians/trending/card-4.png');
+}
+.trending-under-header .card-group .card .card-img-top.card-5 {
+  background-image: url('/img-utopians/trending/card-5.png');
+}
+.trending-under-header .card-group .card .card-img-top.card-6,
+.trending-under-header .card-group .card .card-img-top.card-tim,
+.trending-under-header .card-group .card .card-img-top.card-anna,
+.trending-under-header .card-group .card .card-img-top.card-noah {
+  background-image: url('/img-utopians/trending/card-6.png');
+}
+.trending-under-header .card-group .card .card-title {
+  margin-top: 10px;
+}
+.events-header {
+  padding: 100px 0 75px 0;
+  background-color: #fff;
+}
+.events-header .events-header-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.events-header .events-header-wrapper .wrapper-element {
+  flex: 1;
+  padding: 5px;
+  text-align: center;
+}
+.events-header .events-header-wrapper .wrapper-element .star {
+  display: inline-block;
+  padding: 10px;
+}
+.events-header .events-header-wrapper .wrapper-element .caret-down {
+  display: inline-block;
+  padding: 10px 0;
+}
+.events-header .events-card {
+  margin: 25px 0;
+}
+.events-header .events-card .events-card-body .heading {
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+  font-size: 34px;
+  text-align: center;
+}
+.events-header .events-card .events-card-body .subheading {
+  padding: 20px;
+  margin: 0;
+  font-size: 16px;
+}
+.events-header .events-card .events-card-body .events-card-img {
+  background-image: url('/img-utopians/events/events-1.png');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 400px;
+}
+.events-header .events-card .events-card-body .events-card-img .video-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.events-header .events-card .events-card-body .events-card-img .video-overlay i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 46px;
+  color: #fff;
+}
+.events-header .events-card .events-card-body .stream-img {
+  max-height: 30px;
+}
+.events-header .book-btn {
+  color: #fff;
+  background-color: #333333;
+  padding: 10px 30px;
+  border: 1px solid #333333;
+  transition: 0.25s;
+  margin: 50px auto 0 auto;
+  display: block;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 34px;
+  border: none;
+}
+.events-header .book-btn:hover {
+  background-color: #fff;
+  color: #333333 !important;
+}
+.events-under-header {
+  padding: 100px 0;
+  background-color: #F7F7F7;
+}
+.events-under-header h2 {
+  font-size: 34px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.events-under-header .card-group .card {
+  margin: 20px;
+  border: none;
+}
+.events-under-header .card-group .card .card-img-top {
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+.events-under-header .card-group .card .card-img-top.card-1 {
+  background-image: url('/img-utopians/events/events-card-1.png');
+}
+.events-under-header .card-group .card .card-img-top.card-2 {
+  background-image: url('/img-utopians/events/events-card-2.png');
+}
+.events-under-header .card-group .card .card-img-top.card-3 {
+  background-image: url('/img-utopians/events/events-card-3.png');
+}
+.events-under-header .card-group .card .card-img-top.card-4 {
+  background-image: url('/img-utopians/events/events-card-4.png');
+}
+.events-under-header .card-group .card .card-block {
+  text-align: center;
+}
+.events-under-header .card-group .card .card-block .card-title {
+  padding: 20px 0;
+}
+.events-under-header .card-group .card .card-block .stream-img {
+  margin: 20px;
+}
+.events-under-header .card-group .card .card-block .view-btn {
+  color: #fff;
+  background-color: #333333;
+  padding: 10px 30px;
+  border: 1px solid #333333;
+  transition: 0.25s;
+}
+.events-under-header .card-group .card .card-block .view-btn:hover {
+  background-color: #fff;
+  color: #333333 !important;
+}
+.stream-img {
+  max-height: 15px;
+  display: block;
+  margin: 10px 0 0 auto;
+}
+body {
+  opacity: 0;
+  transition: 0.25s;
+}
+.show-body {
+  opacity: 1;
+}
+a {
+  color: #62676d;
+}
+.margin-auto {
+  margin: 0 auto;
+  width: 100%;
+}
+* {
+  font-weight: 300;
+  color: #333333;
+}
+.i-am-flex {
+  display: flex;
+  align-items: center;
+}
+.buttons-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.buttons-wrapper .wrapper-element {
+  flex: 1;
+  padding: 5px;
+  text-align: center;
+}
+.buttons-wrapper .wrapper-element .buttons-wrapper__button {
+  color: #fff;
+  background-color: #333333;
+  padding: 10px 30px;
+  border: 1px solid #333333;
+  transition: 0.25s;
+  font-size: 14px;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+.buttons-wrapper .wrapper-element .buttons-wrapper__button:hover {
+  background-color: #fff;
+  color: #333333 !important;
+}
+.hl {
+  background-color: #E6E6E6;
+}
+.remove-margin {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.card {
+  background-color: rgba(0, 0, 0, 0);
+}
+.overflow-body {
+  overflow: hidden;
+}

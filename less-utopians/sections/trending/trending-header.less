@@ -1,0 +1,85 @@
+.trending-header{
+    padding: 100px 0 75px 0;
+    background-color: #fff;
+    .trending-header-wrapper{
+        display: flex;
+        flex-direction: row;
+        .wrapper-element{
+            flex: 1;
+            padding: 5px;
+            text-align: center;
+            .star{
+               display: inline-block; 
+               padding: 10px;
+            }
+            .caret-down{
+                display: inline-block;
+                padding: 10px 0;
+            }
+        }
+    }
+    .trending-card{
+        margin: 25px 0;
+        .col-md-6{
+            padding: 0;
+        }
+        .trending-card-img{
+            background-size: cover;
+            background-position: center;
+            min-height: 336px;
+            &.tatiana{
+               background-image: url('/img-utopians/tatiana.png');  
+            }
+        }
+        .trending-card-text{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            height: 100%;
+            padding: 0 25px;
+            background-color: #fff;
+            @media @tablet{
+                margin-top: 50px;
+            }
+            .heading{
+                flex: 1;
+                padding: 0;
+                margin: 0;
+                font-weight: 300;
+                font-size: @font-size-l;
+                
+                
+            }
+            .subheading{
+                flex: 1;
+                padding: 20px;
+                margin: 0;
+                font-size: @font-size-m;
+            }
+            .body{
+                flex: 1;
+                padding: 15px 0;
+                margin: 0;
+                font-size: @font-size-s;
+            }
+            .footer{
+                flex: 1;
+                padding: 0;
+                margin: 0;
+                .footer-icons{
+                    .icon{
+                        img{
+                            height: 30px;
+                            width: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .book-btn{
+        .btn();
+        margin: 50px auto 0 auto;
+        display: block;
+    }
+}

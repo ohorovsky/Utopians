@@ -1,0 +1,80 @@
+.split{
+    padding: 100px 0;
+    .split-btn{
+        .btn();
+    }
+    
+    .split-left{
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            height: 100%;
+            @media @tablet{
+                align-items: center;
+            }
+            h2{
+                flex: 1;
+            }
+            .profiles{
+                padding: 25px 0;
+                .contributor-profile{
+                    .image{
+                       width: 100px;
+                       height: 100px;
+                       margin: 0 auto;
+                    }
+                    .name{
+                        h3{
+                            font-size: @font-size-s;
+                            text-align: center;
+                            padding: 21.5px 0;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    .split-right{
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @media @tablet{
+                align-items: center;
+                margin-top: 50px;
+            }
+            .articles{
+                padding: 25px 0;
+                .article{
+                    display: flex;
+                    margin: 10px 0;
+                    .article-img{
+                        background-position: center;
+                        background-size: cover;
+                        width: 100px;
+                        height: 100px;
+                        display: inline-block;
+                        &.article-1{
+                            background-image: url('/img-utopians/articles/article-1.png');
+                        }
+                    }
+                    .article-text{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        p{
+                            margin: 0;
+                            padding: 10px;
+                        }
+                        
+                    }
+                }
+            }
+            
+        }
+    }
+    
+}

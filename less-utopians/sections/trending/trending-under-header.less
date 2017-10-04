@@ -1,0 +1,72 @@
+.trending-under-header{
+    padding: 100px 0;
+    background-color: @color-secondary;
+    .buttons-wrapper{
+        justify-content: center;
+        padding-bottom: 50px;
+        .wrapper-element{
+            flex: inherit;
+        }
+    }
+    h2{
+        margin: 50px 0;
+        @media @mobile{
+            text-align: center;
+        }
+    }
+    .card-group{
+        margin-bottom: 20px;
+        .card{
+            border:none;
+            margin: 10px;
+            .card-img-top{
+                min-height: 300px;
+                background-position: center;
+                background-size: cover;
+                position: relative;
+                @media @tablet{
+                    min-height: 200px;
+                }
+                .video-overlay{
+                    background-color: rgba(0,0,0,0.2);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    i{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        font-size: @font-size-xl;
+                        color: #fff;
+                    }
+                }
+                &.card-1{
+                    background-image: url('/img-utopians/trending/card-1.png');
+                }
+                &.card-2{
+                    background-image: url('/img-utopians/trending/card-2.png');
+                }
+                &.card-3{
+                    background-image: url('/img-utopians/trending/card-3.png');
+                }
+                &.card-4{
+                    background-image: url('/img-utopians/trending/card-4.png');
+                }
+                &.card-5{
+                    background-image: url('/img-utopians/trending/card-5.png');
+                }
+                &.card-6, &.card-tim, &.card-anna, &.card-noah{
+                    background-image: url('/img-utopians/trending/card-6.png');
+                }
+            }
+            .card-title{
+                margin-top: 10px;
+            }
+            
+        }
+        
+    }
+}

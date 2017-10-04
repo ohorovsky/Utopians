@@ -1,0 +1,45 @@
+@color-main: #333333;
+@color-secondary: #F7F7F7;
+@color-text: #000;
+@color-link: #62676d;
+@color-invert: #fff;
+
+@font-size-xl: 46px;
+@font-size-l: 34px;
+@font-size-m: 21px;
+@font-size-s: 16px;
+@font-size-xs: 14px;
+
+
+.mixin (dark, @color) {
+  color: darken(@color, 10%);
+}
+
+.mixin (light, @color) {
+  background-color: lighten(@color, 30%);
+}
+
+.mixin (@_, @color) { // this is always included
+  display: block;
+}
+
+@switch: light;
+
+// .class {
+//   .mixin(@switch, #000);
+// }
+
+
+
+.btn(@bg-color:@color-main, @font-color: #fff){
+    color: @font-color;
+    background-color: @bg-color;
+    padding: 10px 30px;
+    border: 1px solid @bg-color;
+    transition: 0.25s;
+    &:hover{
+        background-color: @font-color;
+        color: @bg-color !important;
+    }
+}
+

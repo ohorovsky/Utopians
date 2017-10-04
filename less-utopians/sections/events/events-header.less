@@ -1,0 +1,124 @@
+.events-header{
+    padding: 100px 0 75px 0;
+    background-color: #fff;
+    .events-header-wrapper{
+        display: flex;
+        flex-direction: row;
+        .wrapper-element{
+            flex: 1;
+            padding: 5px;
+            text-align: center;
+            .star{
+               display: inline-block; 
+               padding: 10px;
+            }
+            .caret-down{
+                display: inline-block;
+                padding: 10px 0;
+            }
+        }
+    }
+    .events-card{
+        margin: 25px 0;
+        .events-card-body{
+            .heading{
+                padding: 0;
+                margin: 0;
+                font-weight: 300;
+                font-size: @font-size-l;
+                text-align: center;
+            }
+            .subheading{
+                padding: 20px;
+                margin: 0;
+                font-size: @font-size-s;
+            }
+            .events-card-img{
+                background-image: url('/img-utopians/events/events-1.png');
+                background-position: center;
+                background-size: cover;
+                position: relative;
+                height: 400px;
+                .video-overlay{
+                    background-color: rgba(0,0,0,0.4);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    i{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        font-size: @font-size-xl;
+                        color: #fff;
+                    }
+                }
+            }
+            .stream-img{
+                max-height: 30px;
+            }
+        }
+    }
+    .book-btn{
+        .btn();
+        margin: 50px auto 0 auto;
+        display: block;
+        background-color: rgba(0,0,0,0);
+        font-size: @font-size-l;
+        border: none;
+    }
+    
+}
+.events-under-header{
+    padding: 100px 0;
+    background-color: @color-secondary;
+    h2{
+        font-size: @font-size-l;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .card-group{
+        .card{
+            margin: 20px;
+            border: none;
+            .card-img-top{
+                background-position: center;
+                background-size: cover;
+                height: 300px;
+                &.card-1{
+                    background-image: url('/img-utopians/events/events-card-1.png');
+                }
+                &.card-2{
+                    background-image: url('/img-utopians/events/events-card-2.png');
+                }
+                &.card-3{
+                    background-image: url('/img-utopians/events/events-card-3.png');
+                }
+                &.card-4{
+                    background-image: url('/img-utopians/events/events-card-4.png');
+                }
+            }
+            .card-block{
+                text-align: center;
+                .card-title{
+                    padding: 20px 0;
+                }
+                .stream-img{
+                    margin: 20px 
+                }
+                .view-btn{
+                    .btn();
+                }
+            }
+            
+            
+        }
+    }
+}
+.stream-img{
+        max-height: 15px;
+        display: block;
+        margin: 10px 0 0 auto;
+    }
