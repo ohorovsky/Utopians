@@ -636,6 +636,7 @@ nav.nav-expand .sign-btn {
 }
 .search .input-wrapper .search-input {
   text-indent: 75px;
+  width: 100%;
   border: none;
   font-size: 46px;
 }
@@ -644,6 +645,11 @@ nav.nav-expand .sign-btn {
 }
 .search .input-wrapper .search-input::placeholder {
   color: #E6E6E6;
+}
+@media only screen and (max-width: 575px) {
+  .search .input-wrapper .search-input {
+    font-size: 30px;
+  }
 }
 .search .input-wrapper i {
   position: absolute;

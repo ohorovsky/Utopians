@@ -33,7 +33,7 @@
         margin: 25px 0;
         .search-input{
             text-indent: 75px;
-        
+            width: 100%;
             border: none;
             font-size: @font-size-xl;
             &:focus{
@@ -41,6 +41,10 @@
             }
             &::placeholder{
                 color: #E6E6E6;
+            }
+            @media @mobile{
+                font-size: 30px;
+
             }
         }
         i{
